@@ -4,10 +4,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PROYECTO GALAXIAS</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        /* --- ESTILOS INTERSTELLAR --- */
+
+        body {
+            background-color: #0a0a0f;
+            /* negro espacial */
+            color: #e0e0e0;
+            /* texto blanco frío */
+            font-family: 'Poppins', sans-serif;
+            /* tipografía moderna */
+        }
+
+        .card {
+            background: #14141a;
+            /* gris oscuro */
+            border: 1px solid #00ffff;
+            /* neón azul */
+            box-shadow: 0 0 10px #00ffff55;
+            /* brillo neón */
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            box-shadow: 0 0 25px #9b5cffaa;
+            /* neón violeta al pasar el mouse */
+            transform: scale(1.02);
+        }
+
+        header,
+        nav {
+            background: linear-gradient(90deg, #0a0a0f, #14141a);
+            border-bottom: 1px solid #00ffff;
+            box-shadow: 0 0 15px #00ffff33;
+        }
+
+        .btn {
+            background: #9b5cff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 0 10px #9b5cff55;
+        }
+
+        .btn:hover {
+            background: #00ffff;
+            color: #0a0a0f;
+            box-shadow: 0 0 25px #00ffffaa;
+        }
+
+        /* ---COLORES INTERSTELLAR --- */
+
+        /* Navbar */
+        .navbar {
+            background: linear-gradient(90deg, #06061a, #0b0b33);
+            border-bottom: 1px solid #00ffff;
+        }
+
+        .navbar a {
+            color: #00ffff !important;
+            text-shadow: 0 0 8px #00ffffaa;
+        }
+
+        .navbar a:hover {
+            color: #9b5cff !important;
+            text-shadow: 0 0 12px #9b5cffaa;
+        }
+
+        /* Secciones claras */
+        .container-fluid.bg-light {
+            background: linear-gradient(180deg, #0f0f1f, #06061a);
+            color: #e0e0ff;
+        }
+
+        /* Footer */
+        footer {
+            background: radial-gradient(circle at center, #0b0b22, #000010);
+            border-top: 1px solid #00ffff44;
+            box-shadow: 0 -2px 20px #00ffff22;
+        }
+
+        footer a {
+            color: #00ffff !important;
+            text-shadow: 0 0 10px #00ffffaa;
+        }
+
+        footer a:hover {
+            color: #9b5cff !important;
+            text-shadow: 0 0 20px #9b5cffaa;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -15,7 +110,7 @@
     <!-- menú -->
     <nav class="navbar navbar-expand-sm bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">MARIO DAVIS AGUILLON</a>
+            <a class="navbar-brand" href="#">APRENDE DEL UNIVERSO</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -78,18 +173,23 @@
 
     <!-- Acerca de -->
     <div class="container mt-5">
-        <h2 class="text-center">ACERCA DE</h2>
+        <h2 class="text-center">ACERCA DEL UNIVERSO</h2>
         <div class="row">
             <div class="col">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque hic praesentium quas libero
-                necessitatibus consequuntur nostrum rerum reprehenderit minima nesciunt consectetur odio, assumenda,
-                eaque veritatis harum, numquam tempore! Harum, nemo?
+                El universo no es solo un lugar que observamos, es una historia que estamos viviendo.
+                Cada planeta, cada estrella y cada segundo que pasa son capítulos escritos en un lenguaje que aún no
+                comprendemos.
+                En la inmensidad del cosmos, el tiempo se dobla, la luz viaja por millones de años y la vida, de alguna
+                forma, encuentra su camino.
+
             </div>
 
             <div class="col">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque hic praesentium quas libero
-                necessitatibus consequuntur nostrum rerum reprehenderit minima nesciunt consectetur odio, assumenda,
-                eaque veritatis harum, numquam tempore! Harum, nemo? <br>
+                Más allá de lo que podemos ver, el universo guarda secretos que desafían nuestra comprensión.
+                Los agujeros negros, las galaxias lejanas y la energía que une todo lo existente son testigos de un
+                orden más grande que nosotros.
+                Explorar el cosmos es también explorar nuestra propia esencia, porque al mirar el cielo, en realidad
+                estamos buscando nuestro lugar en él. <br>
                 <button type="button" class="btn btn-outline-primary" disabled>Primary button</button><br><br>
             </div>
         </div>
@@ -101,10 +201,10 @@
             <div class="col-md-4">
                 <div class="card border-0">
                     <img src="img/card-1.jpg" class="card-img-top rounded-circle" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card Title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                    <div class="card-body" style="color: #e0e0ff; text-shadow: 0 0 8px #00bfff;">
+
+                        <h5 class="card-title">GALAXIAS INFINITAS</h5>
+                        <p class="card-text">Cada galaxia es un universo en sí misma, compuesta por miles de millones de estrellas, planetas y misterios que aún no logramos descifrar. Son los remolinos de luz que dan forma al cosmos..</p>
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
@@ -113,10 +213,10 @@
             <div class="col-md-4">
                 <div class="card border-0">
                     <img src="img/card-2.jpg" class="card-img-top rounded-circle" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card Title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                    <div class="card-body" style="color: #e0e0ff; text-shadow: 0 0 8px #00bfff;">
+
+                        <h5 class="card-title">EL PODER DE LAS ESTRELLAS</h5>
+                        <p class="card-text">Las estrellas son los corazones ardientes del universo. Su energía da origen a los elementos que forman los planetas, los océanos y hasta la vida misma en la Tierra.</p>
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
@@ -125,10 +225,10 @@
             <div class="col-md-4">
                 <div class="card border-0">
                     <img src="img/card-3.jpg" class="card-img-top rounded-circle" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card Title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                    <div class="card-body" style="color: #e0e0ff; text-shadow: 0 0 8px #00bfff;">
+
+                        <h5 class="card-title">VIAJE ENTRE PLANETAS</h5>
+                        <p class="card-text">Desde los gigantes gaseosos hasta los mundos helados, cada planeta cuenta una historia distinta sobre la formación y evolución del sistema solar.</p>
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
@@ -144,12 +244,11 @@
                     <img src="img/slider-3.jpg" class="img-fluid rounded-start" alt="...">
                 </div>
                 <div class="col-md-7">
-                    <div class="card-body">
-                        <h2 class="card-title">CURSOS SENA</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quas voluptatum
-                            doloremque voluptas quisquam quo nemo officiis, sit accusantium eveniet libero vero, suscipit
-                            accusamus, ipsum pariatur? Iste praesentium nostrum neque.</p>
-                        <div class="text-center"><a href="#" class="btn btn-success btn-lg">CERTIFICATE</a></div>
+                    <div class="card-body" style="color: #e0e0ff; text-shadow: 0 0 8px #00bfff;">
+
+                        <h2 class="card-title">EXPLORANDO EL UNIVERSO VISIBLE</h2>
+                        <p class="card-text">Aprende cómo los astrónomos observan las profundidades del espacio, desde los telescopios terrestres hasta los satélites orbitales. Descubre cómo se capturan imágenes de galaxias lejanas y qué secretos esconden los agujeros negros, las nebulosas y las supernovas.</p>
+                        <div class="text-center"><a href="#" class="btn btn-success btn-lg">EXPLORAR CURSO</a></div>
                     </div>
                 </div>
             </div>
@@ -160,36 +259,36 @@
         <div class="card mb-3 border-0">
             <div class="row g-0">
                 <div class="col-md-7">
-                    <div class="card-body">
-                        <h2 class="card-title">CURSOS SENA</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quas voluptatum
-                            doloremque voluptas quisquam quo nemo officiis, sit accusantium eveniet libero vero, suscipit
-                            accusamus, ipsum pariatur? Iste praesentium nostrum neque.</p>
-                        <div class="text-center"><a href="#" class="btn btn-success btn-lg">CERTIFICATE</a></div>
+                    <div class="card-body" style="color: #e0e0ff; text-shadow: 0 0 8px #00bfff;">
+                        <div class="card-body" style="color: #e0e0ff; text-shadow: 0 0 8px #00bfff;">
+
+                            <h2 class="card-title">CIENCIA Y VIDA ENTRE LAS ESTRELLAS</h2>
+                            <p class="card-text">Sumérgete en los fundamentos de la astrofísica y la cosmología. Conoce cómo nacen, viven y mueren las estrellas, y qué papel juega el tiempo, la materia y la energía en la expansión infinita del universo.</p>
+                            <div class="text-center"><a href="#" class="btn btn-success btn-lg">VER DETALLES</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="img/slider-2.jpg" class="img-fluid rounded-start" alt="...">
                     </div>
                 </div>
-                <div class="col-md-5">
-                    <img src="img/slider-2.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container-fluid bg-dark p-5 text-center">
+                <div class="row text-center">
+                    <div class="col-6 col-md-3 mb-2"><a href="#" class="text-decoration-none text-success"><i class="bi bi-lightbulb"></i>CURSOS</a></div>
+                    <div class="col-6 col-md-3 mb-2"><a href="#" class="text-decoration-none text-success"><i class="bi bi-laptop"></i>TUTORIALES</a></div>
+                    <div class="col-6 col-md-3 mb-2"><a href="#" class="text-decoration-none text-success"><i class="bi bi-download"></i>DESCARGAS</a></div>
+                    <div class="col-6 col-md-3 mb-2"><a href="#" class="text-decoration-none text-success"><i class="bi bi-mailbox"></i>CONTACTO</a></div>
                 </div>
             </div>
-        </div>
-    </div>
+        </footer>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container-fluid bg-dark p-5 text-center">
-            <div class="row">
-                <div class="col"><a href="#" class="text-decoration-none text-success">CURSOS</a></div>
-                <div class="col"><a href="#" class="text-decoration-none text-success">TUTORIALES</a></div>
-                <div class="col"><a href="#" class="text-decoration-none text-success">DESCARGAS</a></div>
-                <div class="col"><a href="#" class="text-decoration-none text-success"><i class="bi bi-mailbox"></i> CONTACTO</a></div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
 
 </body>
 
