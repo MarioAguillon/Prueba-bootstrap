@@ -115,26 +115,73 @@
 
 <body>
 
+
+
+
     <!-- menú -->
-    <nav class="navbar navbar-expand-sm bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">APRENDE DEL UNIVERSO</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Cursos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Tutoriales</a></li>
-                    <li class="nav-item"><a class="nav-link" aria-disabled="true">Contactos</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: linear-gradient(90deg, #06061a, #0b0b33); border-bottom: 1px solid #00ffff; box-shadow: 0 0 10px #00ffff66;">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="index.html" style="color: #00ffff; text-shadow: 0 0 10px #00ffffaa;">
+      🌌 APRENDE DEL UNIVERSO
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+            style="border-color: #00ffff;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav text-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html" style="color: #00ffff;">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cursos.html" style="color: #00ffff;">Cursos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tutoriales.html" style="color: #00ffff;">Tutoriales</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="descargas.html" style="color: #00ffff;">Descargas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html" style="color: #00ffff;">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+.navbar-nav .nav-link:hover {
+  color: #ff00ff !important;
+  text-shadow: 0 0 10px #ff00ff;
+  transition: all 0.3s ease;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+body {
+  padding-top: 75px;
+}
+</style>
+
+
+
+
+
+
+
 
     <!-- Carrusel -->
+
+
+
+
     <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -204,7 +251,13 @@
                 orden más grande que nosotros.
                 Explorar el cosmos es también explorar nuestra propia esencia, porque al mirar el cielo, en realidad
                 estamos buscando nuestro lugar en él. <br>
-                <button type="button" class="btn btn-outline-primary" disabled>Conocer más</button><br><br>
+               <a href="https://science.nasa.gov/universe/"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="btn btn-outline-primary">
+   Conocer más
+</a>
+
             </div>
         </div>
     </div>
@@ -219,7 +272,7 @@
 
                         <h5 class="card-title">GALAXIAS INFINITAS</h5>
                         <p class="card-text">Cada galaxia es un universo en sí misma, compuesta por miles de millones de estrellas, planetas y misterios que aún no logramos descifrar. Son los remolinos de luz que dan forma al cosmos..</p>
-                        <a href="#" class="btn btn-primary">Ver Más</a>
+                        <a href="https://www.nasa.gov/topics/universe/galaxies/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver Más</a>
                     </div>
                 </div>
             </div>
@@ -231,7 +284,7 @@
 
                         <h5 class="card-title">EL PODER DE LAS ESTRELLAS</h5>
                         <p class="card-text">Las estrellas son los corazones ardientes del universo. Su energía da origen a los elementos que forman los planetas, los océanos y hasta la vida misma en la Tierra.</p>
-                        <a href="#" class="btn btn-primary">Ver Más</a>
+                        <a href="https://es.wikipedia.org/wiki/Estrella" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver Más</a>
                     </div>
                 </div>
             </div>
@@ -243,7 +296,7 @@
 
                         <h5 class="card-title">VIAJE ENTRE PLANETAS</h5>
                         <p class="card-text">Desde los gigantes gaseosos hasta los mundos helados, cada planeta cuenta una historia distinta sobre la formación y evolución del sistema solar.</p>
-                        <a href="#" class="btn btn-primary">Ver Más</a>
+                        <a href="https://solarsystem.nasa.gov/planets/overview/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Ver Más</a>
                     </div>
                 </div>
             </div>
@@ -262,7 +315,7 @@
 
                         <h2 class="card-title">EXPLORANDO EL UNIVERSO VISIBLE</h2>
                         <p class="card-text">Aprende cómo los astrónomos observan las profundidades del espacio, desde los telescopios terrestres hasta los satélites orbitales. Descubre cómo se capturan imágenes de galaxias lejanas y qué secretos esconden los agujeros negros, las nebulosas y las supernovas.</p>
-                        <div class="text-center"><a href="#" class="btn btn-success btn-lg">EXPLORAR CURSO</a></div>
+                        <div class="text-center"><a href="https://science.nasa.gov/universe/" target="_blank" rel="noopener noreferrer" class="btn btn-success btn-lg">EXPLORAR CURSO</a></div>
                     </div>
                 </div>
             </div>
@@ -276,7 +329,7 @@
                     <div class="card-body" style="color: #e0e0ff; text-shadow: 0 0 8px #00bfff;">
                        <h2 class="card-title">CIENCIA Y VIDA ENTRE LAS ESTRELLAS</h2>
                             <p class="card-text">Sumérgete en los fundamentos de la astrofísica y la cosmología. Conoce cómo nacen, viven y mueren las estrellas, y qué papel juega el tiempo, la materia y la energía en la expansión infinita del universo.</p>
-                            <div class="text-center"><a href="#" class="btn btn-success btn-lg">VER DETALLES</a></div>
+                            <div class="text-center"><a href="https://www.esa.int/Science_Exploration/Space_Science" target="_blank" rel="noopener noreferrer" class="btn btn-success btn-lg">VER DETALLES</a></div>
                         </div>
                     </div>
                     <div class="col-md-5">
@@ -285,17 +338,49 @@
             </div>
         </div>
     </div>
+
+
         <!-- Footer -->
-        <footer>
-            <div class="container-fluid bg-dark p-5 text-center">
-                <div class="row text-center">
-                    <div class="col-6 col-md-3 mb-2"><a href="#" class="text-decoration-none text-success"><i class="bi bi-lightbulb"></i>CURSOS</a></div>
-                    <div class="col-6 col-md-3 mb-2"><a href="#" class="text-decoration-none text-success"><i class="bi bi-laptop"></i>TUTORIALES</a></div>
-                    <div class="col-6 col-md-3 mb-2"><a href="#" class="text-decoration-none text-success"><i class="bi bi-download"></i>DESCARGAS</a></div>
-                    <div class="col-6 col-md-3 mb-2"><a href="#" class="text-decoration-none text-success"><i class="bi bi-mailbox"></i>CONTACTO</a></div>
-                </div>
-            </div>
-        </footer>
+        
+<footer class="mt-5">
+  <div class="container-fluid p-5 text-center text-light"
+       style="background: radial-gradient(circle at center, #0b0b22, #000010);
+              border-top: 1px solid #00ffff44;
+              box-shadow: 0 -2px 20px #00ffff22;">
+    <div class="row text-center">
+      <div class="col-6 col-md-3 mb-3">
+        <a href="cursos.html" class="text-decoration-none fw-bold"
+           style="color: #00ffff; text-shadow: 0 0 10px #00ffffaa;">
+          <i class="bi bi-lightbulb"></i> CURSOS
+        </a>
+      </div>
+      <div class="col-6 col-md-3 mb-3">
+        <a href="tutoriales.html" class="text-decoration-none fw-bold"
+           style="color: #00ffff; text-shadow: 0 0 10px #00ffffaa;">
+          <i class="bi bi-laptop"></i> TUTORIALES
+        </a>
+      </div>
+      <div class="col-6 col-md-3 mb-3">
+        <a href="descargas.html" class="text-decoration-none fw-bold"
+           style="color: #00ffff; text-shadow: 0 0 10px #00ffffaa;">
+          <i class="bi bi-download"></i> DESCARGAS
+        </a>
+      </div>
+      <div class="col-6 col-md-3 mb-3">
+        <a href="contacto.html" class="text-decoration-none fw-bold"
+           style="color: #00ffff; text-shadow: 0 0 10px #00ffffaa;">
+          <i class="bi bi-mailbox"></i> CONTACTO
+        </a>
+      </div>
+    </div>
+
+    <hr style="border-color: #00ffff55;">
+    <p class="mt-3" style="color: #aaa; font-size: 0.9rem;">
+      © 2025 Aprende del Universo · Todos los derechos reservados
+    </p>
+  </div>
+</footer>
+
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
